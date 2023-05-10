@@ -8,11 +8,10 @@
     --cor2: #0D1F2D;
     --cor3: #546A7B;
     --cor4: #C7CEDB;
-    --cor5: #2F4CD4;
+    --cor5: #222341;
     --cor6: #2DD881;
-    --cor7: #ffc209;
-    --cor8: #d48d0a;
-    --cor9: #fff;
+    --cor7: #546A7B;
+    --cor9: #fffFFF;
 }
 
 *{
@@ -36,8 +35,10 @@ body {
     #home-bloco {
         background-color: var(--cor2);
         display: flex;
-        height: 100vh;
+        height: 120vh;
         max-height: 100%;
+        width: 100vw;
+        max-width: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -76,11 +77,11 @@ body {
         width: 100%;
         height: 100%;
         font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0 2rem;
+        font-weight: 500;
+        padding: 5px 2rem;
         color: var(--cor2);
         background-color: var(--cor6);
-        border: 2px solid var(--cor6);
+        border: 3px solid var(--cor6);
         transition: all 0.5s;
     }
 
@@ -91,9 +92,59 @@ body {
 
 /* FECHA LANDING PAGE */
 
+/* SOBREEEEE */
+
+    #sobre-bloco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 100%;
+        height: 120vh;
+        max-height: 100%;
+        background-color: var(--cor5);
+        padding: 0 1rem;
+    }
+
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 3px solid var(--cor3);
+    }
+
+    .sobre-container h1 {
+        color: var(--cor6);
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .sobre-txt {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sobre-txt p {
+        color: var(--cor9);
+        font-size: 100%;
+        line-height: 2rem;
+    }
+
+    .sobre-icons {
+        color: var(--cor6);
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
 }
 
+/* FECHA MOBILEEE */
+
 @media(min-width:890px){
+/* LANDING PAGE */
     #home-bloco {
         background-color: var(--cor2);
         display: flex;
@@ -143,7 +194,7 @@ body {
         padding: 0 2rem;
         color: var(--cor2);
         background-color: var(--cor6);
-        border: 2px solid var(--cor6);
+        border: 3px solid var(--cor6);
         transition: all 0.5s;
     }
 
@@ -151,6 +202,9 @@ body {
         background: none;
         color: var(--cor6);
     }
+/* FECHA LANDING PAGE */
 
 }
+
+
 
