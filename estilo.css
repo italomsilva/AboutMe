@@ -112,6 +112,7 @@ body {
         flex-direction: column;
         padding: 1rem;
         border: 3px solid var(--cor3);
+        align-items: center;
     }
 
     .sobre-container h1 {
@@ -119,6 +120,15 @@ body {
         font-size: 2rem;
         text-align: center;
         text-decoration: underline;
+    }
+
+    .sobre-img {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 3px solid var(--cor6);
+        padding: 5px;
     }
 
     .sobre-txt {
@@ -130,8 +140,9 @@ body {
     .sobre-txt p {
         color: var(--cor9);
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
+        font-weight: 300;
     }
 
     .sobre-icons {
@@ -163,7 +174,6 @@ body {
         max-width: 100%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        border: 3px solid var(--cor6);
         padding: 0 1rem;
     }
 
@@ -185,7 +195,7 @@ body {
     .projetos-conteudo {
         display: flex;
         flex-direction: column-reverse;
-        background-color: var(--cor2);
+        background-color: var(--cor5);
         color: var(--cor9);
         border: 3px solid var(--cor6);
         border-radius: 15px;
@@ -195,6 +205,7 @@ body {
     }
 
     .projetos-conteudo h2 {
+        font-size: 2rem;
         color: var(--cor6);
         text-align: center;
     }
@@ -219,9 +230,22 @@ body {
     .projetos-img {
         display: flex;
         background-color: #546A7B;
-        width: 200px;
+        width: 100%;
+        max-width: 100%;
         height: 200px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 
+    .projetos-img p {
+        background-color: #0D1F2D;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .projetos-btn a:hover {
@@ -230,12 +254,21 @@ body {
     }
 
     .projetos-conteudo p {
-        font-weight: 300;
+        color: var(--cor9);
         text-align: justify;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 300;
     }
 
 }
 
+/* FECHA MOBILEEE */
+/* FECHA MOBILEEE */
+/* FECHA MOBILEEE */
+/* FECHA MOBILEEE */
+/* FECHA MOBILEEE */
+/* FECHA MOBILEEE */
 /* FECHA MOBILEEE */
 
 @media(min-width:890px){
@@ -253,14 +286,16 @@ body {
         display: flex;
         width: 100vw;
         max-width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 0 5vw;
     }
 
     .home-conteudo-txt{
+        max-width: 50vw;
         color: var(--cor9);
     }
+    
 
     .home-conteudo-txt h1 {
         font-size: 3.5rem;
@@ -273,7 +308,7 @@ body {
     .home-conteudo-btn {
         display: flex;
         max-width: 100%;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .home-conteudo-btn button {
@@ -297,6 +332,16 @@ body {
         background: none;
         color: var(--cor6);
     }
+
+    .home-meio-img {
+        width: 30vw;
+        max-width: 100%;
+        height: 30vw;
+        background-color: var(--cor2);
+        border: 3px solid var(--cor6);
+        border-radius: 100%;
+    }
+
 /* FECHA LANDING PAGE */
 
 /* SOBREEEEE */
@@ -304,18 +349,21 @@ body {
     #sobre-bloco {
         background-color: var(--cor5);
         display: flex;
-        height: 120vh;
+        height: 100%;
         max-height: 100%;
         align-items: center;
         justify-content: center;
-        padding: 0 10vw;
+        padding: 3rem 10vw;
     }
 
     .sobre-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 1rem;
         border: 3px solid var(--cor3);
+        row-gap: 3rem;
+        border-radius: 5px;
     }
 
     .sobre-container h1 {
@@ -323,6 +371,14 @@ body {
         font-size: 3.5rem;
         text-align: center;
         text-decoration: underline;
+    }
+
+    .sobre-img {
+        width: 300px;
+        height: 300px;
+        background-color: #546A7B;
+        border: 3px solid var(--cor6);
+        border-radius: 100%;
     }
 
     .sobre-txt {
@@ -343,6 +399,112 @@ body {
         justify-content: space-between;
         font-size: 1.5rem;
     }
+
+/* PROJETOS */
+
+#projetos-bloco {
+    background-color: var(--cor3);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem;
+}
+
+.projetos-titulo{
+    color: var(--cor6);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.projetos-card {
+    display: flex;
+    height: auto;
+    width: 95vw;
+    max-width: 100%;
+    columns: 2;
+    flex-wrap: wrap;
+    gap: 10vh 20%;
+}
+
+.projetos-conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    background-color: var(--cor5);
+    color: var(--cor9);
+    border: 3px solid var(--cor6);
+    border-radius: 10px;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+
+.projetos-txt h2 {
+    color: var(--cor6);
+    font-size: 2rem;
+}
+
+.projetos-txt p {
+    color: var(--cor9);
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.projetos-img {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: var(--cor7);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos-img p {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--cor2);
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-btn {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projetos-btn a {
+    color: var(--cor2);
+    background-color: var(--cor6);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--cor6);
+    transition: all 0.5s;
+}
+
+.projetos-btn a:hover {
+    color: var(--cor6);
+    background-color: var(--cor2);
+}
 
 
 
