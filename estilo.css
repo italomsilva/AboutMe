@@ -181,7 +181,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 1rem 10vh 1rem;
+        padding: 0;
         gap: 4rem;
     }
 
@@ -271,7 +271,7 @@ body {
 /* FECHA MOBILEEE */
 /* FECHA MOBILEEE */
 
-@media(min-width:890px){
+@media(min-width:891px){
 /* LANDING PAGE */
     #home-bloco {
         background-color: var(--cor2);
@@ -298,11 +298,12 @@ body {
     
 
     .home-conteudo-txt h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .home-conteudo-txt p {
         font-size: 2rem;
+        font-weight: 200;
     }
 
     .home-conteudo-btn {
@@ -364,6 +365,7 @@ body {
         border: 3px solid var(--cor3);
         row-gap: 3rem;
         border-radius: 5px;
+        box-shadow: 3px 3px 5px #0000004f;
     }
 
     .sobre-container h1 {
@@ -450,6 +452,7 @@ body {
     border-radius: 10px;
     padding: 1rem;
     row-gap: 1rem;
+    box-shadow: 3px 3px 5px #0000004f;
 }
 
 .projetos-txt h2 {
@@ -503,10 +506,176 @@ body {
 
 .projetos-btn a:hover {
     color: var(--cor6);
-    background-color: var(--cor2);
+    background-color: var(--cor5);
 }
 
+/* CONTATO */
 
+#contato-bloco {
+    background-color: var(--cor2);
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+}
+
+.contato-conteiner{
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--cor2);
+    padding: 3rem 1rem;
+}
+
+.contato-left {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+}
+
+.contato-txt {
+    height: 50%;
+}
+
+.contato-txt h1 {
+    color: var(--cor6);
+}
+
+.contato-txt p {
+    color: var(--cor6);
+    font-weight: 300;
+}
+
+.contato-txt a {
+    color: var(--cor6);
+}
+
+.contato-txt ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.contato-txt ul li a {
+    border: 3px solid transparent;
+    transition: all 0.5s;
+}
+
+.contato-txt ul li a:hover {
+    border-bottom: 3px solid var(--cor6);
+}
+
+.contato-right {
+    display: flex;
+    width: 50vw;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+}
+
+.form-card {
+    background-color: var(--cor5);
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #0000004f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    row-gap: 1rem;
+}
+
+.form-card > a {
+    font-weight: 700;
+    color: var(--cor9);
+    font-size: 1.5rem;
+}
+
+.campos-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-form input {
+    background-color: var(--cor7);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor9);
+    font-weight: 600;
+}
+
+.campos-form input::placeholder{
+    color: #7d9eb6;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.campos-form label {
+    color: var(--cor9);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.campos-form textarea {
+    background-color: var(--cor7);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor9);
+    font-weight: 600;
+}
+
+.campos-form textarea::placeholder{
+    color: #7d9eb6;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btns-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns-form button {
+    padding: 0.3rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border-radius: 4px;
+    border: 2px solid var(--cor6);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.5s;
+}
+
+.btns-form button:active {
+    background-color: var(--cor6);
+    color: var(--cor5);
+}
+.btns-form button:hover {
+    background-color: var(--cor5);
+    color: var(--cor6);
+    box-shadow: 3px 3px 8px #2dd8804f;
+}
 
 
 }
