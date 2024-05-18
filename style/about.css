@@ -1,0 +1,116 @@
+@media(max-width: 890px){
+    #sobre-bloco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        background-color: var(--cor5);
+        padding: 10vh 1rem;
+    }
+
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 3px solid var(--cor3);
+        align-items: center;
+    }
+
+    .sobre-container h1 {
+        color: var(--cor6);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sobre-container h1::after{
+        content: "";
+        display: block;
+        width: 20%;
+        height: 4px;
+        background-color: var(--cor6);
+        margin: auto;
+    }
+
+    .sobre-txt {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sobre-txt p {
+        color: var(--cor9);
+        text-align: justify;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 300;
+    }
+
+    .sobre-icons {
+        color: var(--cor6);
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 891px){
+    #sobre-bloco {
+        background-color: var(--cor5);
+        display: flex;
+        height: 100%;
+        max-height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 10vw;
+      }
+    
+      .sobre-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border: 3px solid var(--cor3);
+        row-gap: 3rem;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px #0000004f;
+      }
+    
+      .sobre-container h1 {
+        color: var(--cor6);
+        font-size: 3.5rem;
+        text-align: center;
+        text-decoration: underline;
+      }
+    
+      .sobre-img {
+        width: 300px;
+        height: 300px;
+        background-color: #546a7b;
+        border: 3px solid var(--cor6);
+        border-radius: 100%;
+      }
+    
+      .sobre-txt {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+      }
+    
+      .sobre-txt p {
+        color: var(--cor9);
+        font-size: 1.5rem;
+        text-align: justify;
+        line-height: 2rem;
+      }
+    
+      .sobre-icons {
+        color: var(--cor6);
+        justify-content: space-between;
+        font-size: 1.5rem;
+      }
+    
+    
+}

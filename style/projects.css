@@ -1,0 +1,216 @@
+@media (max-width: 890px) {
+  #projetos-bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: var(--cor8);
+  }
+
+  .projetos-titulo {
+    display: inline-flex;
+    background-color: var(--cor5);
+    color: var(--cor6);
+    font-size: 2rem;
+    text-decoration: underline;
+    max-width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0 1rem;
+  }
+
+  .projetos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 4rem;
+  }
+
+  .projetos-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 2rem;
+  }
+
+  .projetos-conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--cor5);
+    color: var(--cor9);
+    border: 3px solid var(--cor6);
+    border-radius: 15px;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .projetos-conteudo h2 {
+    font-size: 2rem;
+    color: var(--cor6);
+    text-align: center;
+  }
+
+  .projetos-btn {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projetos-btn a {
+    color: var(--cor2);
+    background-color: var(--cor6);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--cor6);
+    transition: all 0.5s;
+  }
+
+  .projetos-img {
+    display: flex;
+    background-color: #546a7b;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .projetos-img p {
+    background-color: #0d1f2d;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projetos-btn a:hover {
+    color: var(--cor6);
+    background-color: var(--cor2);
+  }
+
+  .projetos-conteudo p {
+    color: var(--cor9);
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 891px) {
+  #projetos-bloco {
+    background-color: var(--cor8);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projetos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem;
+  }
+
+  .projetos-titulo {
+    color: var(--cor6);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .projetos-card {
+    display: flex;
+    height: auto;
+    width: 95vw;
+    max-width: 100%;
+    columns: 2;
+    flex-wrap: wrap;
+    gap: 10vh 20%;
+  }
+
+  .projetos-conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    background-color: var(--cor5);
+    color: var(--cor9);
+    border: 3px solid var(--cor6);
+    border-radius: 10px;
+    padding: 1rem;
+    row-gap: 1rem;
+    box-shadow: 3px 3px 5px #0000004f;
+  }
+
+  .projetos-txt h2 {
+    color: var(--cor6);
+    font-size: 2rem;
+  }
+
+  .projetos-txt p {
+    color: var(--cor9);
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+  .projetos-img {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: var(--cor7);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projetos-img p {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--cor2);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projetos-btn {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projetos-btn a {
+    color: var(--cor2);
+    background-color: var(--cor6);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--cor6);
+    transition: all 0.5s;
+  }
+
+  .projetos-btn a:hover {
+    color: var(--cor6);
+    background-color: var(--cor5);
+  }
+}
