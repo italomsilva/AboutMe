@@ -30,7 +30,7 @@
         content: "";
         display: block;
         width: 20%;
-        height: 4px;
+        height: 3px;
         background-color: var(--cor6);
         margin: auto;
     }
@@ -44,9 +44,10 @@
     .sobre-txt p {
         color: var(--cor9);
         text-align: justify;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         font-weight: 300;
+        text-indent: 1rem;
     }
 
     .sobre-icons {

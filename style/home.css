@@ -27,14 +27,12 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-/* MOBILEEEEEEEE */
-
 @media (max-width: 890px) {
   /* LANDING PAGE */
   #home-bloco {
     background-color: var(--cor2);
     display: flex;
-    height: 120vh;
+    height: 100vh;
     max-height: 100%;
     width: 100vw;
     max-width: 100%;
@@ -46,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70vw;
+    width: 75vw;
   }
 
   .home-conteudo-txt {
@@ -58,6 +56,7 @@ body {
 
   .home-conteudo-txt p {
     font-weight: 300;
+    font-size: 1.2rem;
   }
 
   .home-conteudo-btn {
@@ -83,7 +82,7 @@ body {
   }
 
   .home-conteudo-btn a:hover {
-    background-color: #2dd8802f;
+    background-color: #2dd88031;
     color: var(--cor6);
   }
 }
@@ -92,7 +91,7 @@ body {
     #home-bloco {
         background-color: var(--cor2);
         display: flex;
-        height: 120vh;
+        height: 100vh;
         max-height: 100%;
         align-items: center;
         justify-content: center;
@@ -113,11 +112,11 @@ body {
     }
 
     .home-conteudo-txt h1 {
-        font-size: 5vw;
+        font-size: 4.5rem;
     }
 
     .home-conteudo-txt p {
-        font-size: 2vw;
+        font-size: 2rem;
         font-weight: 200;
     }
 
@@ -133,9 +132,9 @@ body {
     }
 
     .home-conteudo-btn a {
-        width: 100%;
+        width: max-content;
         height: 100%;
-        font-size: 3vw;
+        font-size: 2rem;
         font-weight: 500;
         padding: 0 2rem;
         color: var(--cor2);
