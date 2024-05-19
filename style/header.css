@@ -70,6 +70,7 @@ header {
         background-color: #0D1F2D;
         position: fixed;
         padding: 0 2vw;
+        z-index: 1000;
     }
 
     .menu-lista {
@@ -129,6 +130,7 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 0 3vw;
+        z-index: 100;
     }
 
     .menu-lista {
