@@ -85,6 +85,7 @@
     }
     .about-skills p span a {
       color: var(--cor3);
+      font-size: 0.8rem
     }
 
 }
