@@ -1,0 +1,89 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--dark-first);
+    column-gap: 2rem;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--light-first);
+    font-weight: bold;
+}
+
+.title strong {
+    color: var(--contrast-color);
+}
+
+.menu_burguer {
+    display: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    font-size: 1rem;
+    color: var(--light-first);
+    font-weight: 200;
+    transition: all 0.3s;
+}
+
+.nav ul li a:hover {
+    color: var(--contrast-color);
+}
+
+.nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--contrast-color);
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.social a i{
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .menu_burguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .menu_burguer span {
+        display: block;
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: var(--dark-first);
+        margin: 0.2rem 0;
+        transition: all 0.3s ease;
+    }
+}

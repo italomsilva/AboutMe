@@ -1,0 +1,47 @@
+.project_card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 40%;
+    background-color: var(--dark-second);
+    border-radius: 0.5rem;
+    border: 2px solid var(--contrast-color);
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.skills_list{
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+
+.skills_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--contrast-color);
+    font-size: 2rem;
+}
+
+.container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.container_img img{
+    width: auto;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.container_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 

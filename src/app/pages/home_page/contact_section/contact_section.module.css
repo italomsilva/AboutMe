@@ -1,0 +1,125 @@
+.contact_section {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--dark-first);
+    align-items: center;
+    padding: 90px 2rem;
+}
+
+.container_txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 0 0 0 5vw;
+    row-gap: 1rem;
+}
+
+.container_txt li {
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+}
+
+.container_txt li a {
+    color: var(--contrast-color);
+    font-size: 1.5rem;
+}
+
+.container_txt li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--contrast-color);
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.container_txt li a:hover::after {
+    width: 100%;
+}
+
+.img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.img_container img {
+    width: 100%;
+    height: auto;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container_form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    max-width: 600px;
+    background-color: var(--dark-second);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    row-gap: 1rem;
+}
+
+.container_form form h2 {
+    text-align: center;
+    color: var(--light-first);
+    font-size: 2rem;
+}
+
+.container_form form h2 strong {
+    color: var(--contrast-color);
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input label {
+    color: var(--light-first);
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.form_input input{
+    display: flex;
+    padding: 0.3rem;
+    background-color: var(--light-second);
+    border-radius: 0.3rem;
+    outline: none;
+    color: var(--dark-first);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn_sub{
+    display: flex;
+    width: 100%;   
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

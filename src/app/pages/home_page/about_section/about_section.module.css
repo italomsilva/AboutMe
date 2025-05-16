@@ -1,0 +1,9 @@
+.about_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: 90px 2rem;
+  background-color: var(--dark-second);
+  row-gap: 2rem;
+}

@@ -1,0 +1,26 @@
+
+:root {
+  --dark-first: #0d1f2d;
+  --dark-second: #222341;
+  --dark-third: #1c3144;
+  --contrast-color: #2dd881;
+  --contrast-color-second: #2dd881bb;
+  --contrast-color-hover: #2dd88136;
+  --light-first: #ffffff;
+  --light-second: #c7cedb;
+  --light-third: #546a7b;
+  --cor0: #000000;
+  --cor7: #546a7b;
+  --cor9: #ffffff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}

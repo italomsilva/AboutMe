@@ -1,0 +1,11 @@
+.about_card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow);
+    border: 3px solid var(--light-third);
+    width: 80%;
+    row-gap: 1rem;
+}

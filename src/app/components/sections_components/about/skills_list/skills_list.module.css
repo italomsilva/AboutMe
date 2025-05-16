@@ -1,0 +1,42 @@
+.skills_list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 1rem;
+}
+
+.skills_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skills_list ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-first);
+    border: 2px solid var(--dark-first);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.skills_list ul li:hover {
+    border: 2px solid var(--contrast-color-hover);
+}
+
+.skills_list ul li i {
+    font-size: 2rem;
+    color: var(--contrast-color-second);
+}
+
+.skills_list ul li span {
+    color: var(--light-second);
+    font-size: 1rem;
+    font-weight: 200;
+}
