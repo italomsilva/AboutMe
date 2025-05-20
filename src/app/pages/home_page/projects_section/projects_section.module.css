@@ -1,4 +1,4 @@
-.projects_section{
+.projects_section {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,4 +13,27 @@
     gap: 2rem;
     padding: 2rem;
     width: 100%;
+}
+
+.p_seemore {
+    display: none;
+}
+
+@media(max-width:800px) {
+    .projects_section {
+        padding: 90px 0;
+    }
+
+    .projects_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 1rem;
+        justify-content: start;
+    }
+
+    .p_seemore{
+        display: block;
+    }
 }

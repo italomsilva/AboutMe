@@ -35,6 +35,7 @@ export default function ProjectCard(prop: { project: Project }) {
       </a>
       <div className={styles.container_links}>
         <MyButton
+          className={styles.btn}
           text="Visualizar"
           disabled={project.linkView ? false : true}
           type="link"
@@ -44,11 +45,11 @@ export default function ProjectCard(prop: { project: Project }) {
             border: "2px solid var(--contrast-color)",
             hoverBackgroundColor: "var(--contrast-color-hover)",
             hoverColor: "var(--contrast-color)",
-            fontSize: "1rem",
           }}
         />
         <MyButton
           text="Código"
+          className={styles.btn}
           disabled={project.linkCode ? false : true}
           type="link"
           href={project.linkCode ? project.linkCode : ""}
@@ -57,7 +58,6 @@ export default function ProjectCard(prop: { project: Project }) {
             border: "2px solid var(--contrast-color)",
             hoverBackgroundColor: "var(--contrast-color-hover)",
             hoverColor: "var(--contrast-color)",
-            fontSize: "1rem",
           }}
         />
       </div>

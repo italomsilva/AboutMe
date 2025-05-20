@@ -36,7 +36,7 @@ export const projects: Project[] = [
     ],
     image: <img src={artMauricioImg.src} alt="" />,
     linkView: "https://arte-mauricio-front-end-2d5l.vercel.app/",
-    linkCode: "https://github.com/italomsilva/arte-mauricio-full-stack",
+    linkCode: "https://github.com/italomsilva/ArteMauricio",
   },
   {
     title: "ToDo List Api",

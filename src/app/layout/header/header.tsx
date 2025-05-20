@@ -1,15 +1,26 @@
+"use client";
 import Link from "next/link";
 import { navLinks, socialLinks } from "@/app/data/links";
 import styles from "./header.module.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [menuIsActive, setMenuIsActive] = useState(false);
+
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
         Dev.<strong>Italo</strong>
       </h1>
 
-      <div className={styles.menuBurguer}>
+      <div
+        onClick={() => setMenuIsActive(!menuIsActive)}
+        className={
+          menuIsActive
+            ? `${styles.menu_burguer} ${styles.active}`
+            : styles.menu_burguer
+        }
+      >
         <span></span>
         <span></span>
         <span></span>

@@ -123,3 +123,18 @@
     justify-content: center;
     font-weight: bold;
 }
+
+@media (max-width:800px){
+    .contact_section{
+        flex-direction: column;
+        padding: 90px 1rem;
+    }
+
+    .container_txt {
+        max-width: 100%;
+        text-align: center;
+    }
+    .container_form form {
+        width: 100%;
+    }
+}

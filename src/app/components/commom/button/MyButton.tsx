@@ -14,7 +14,7 @@ export default function MyButton(props: MyButtonProps) {
       : props.style?.color || "var(--dark-first)",
     border: props.style?.border || "3px solid var(--contrast-color)",
     borderRadius: props.style?.borderRadius || "0.1rem",
-    fontSize: props.style?.fontSize || "1rem",
+    fontSize: props.style?.fontSize || "",
     cursor: "pointer",
 
   };

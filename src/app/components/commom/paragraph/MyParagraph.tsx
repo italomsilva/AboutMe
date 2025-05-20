@@ -1,10 +1,11 @@
 export default function MyParagraph(props: MyParagraphProps) {
   return (
     <p
+      className={props.className}
       style={{
-        fontSize: props.fontSize || "1rem",
+        fontSize: props.fontSize || "",
         color: props.color || "var(--light-first)",
-        textAlign: props.textAlign || "left",
+        textAlign: props.textAlign,
         lineHeight: props.lineHeight || "1.5",
         textIndent: props.textIndent || "2rem",
       }}
@@ -20,4 +21,5 @@ export type MyParagraphProps = {
   textAlign?: "left" | "center" | "right" | "justify";
   lineHeight?: string;
   textIndent?: string;
+  className?:string;
 };

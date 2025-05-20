@@ -67,23 +67,78 @@
     font-size: 1.2rem;
 }
 @media (max-width: 768px) {
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        padding: 10vh 0;
+        justify-content: space-evenly;
+        top: 0;
+        right: -100vw;
+        height: 100vh;
+        background-color: var(--dark-first);
+        border: 2px solid var(--contrast-color);
+        border-right: none;
+        border-radius: 2rem 0 0 2rem ;
+        width: 50vw;
+        transition: all 0.3s;
+    }
+
+    
     .menu_burguer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 2rem;
-        height: 2rem;
         cursor: pointer;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        padding: 40px 1rem;
+        row-gap: 4px;
     }
-
-    .menu_burguer span {
+    
+    .menu_burguer span{
         display: block;
         content: "";
-        width: 2rem;
-        height: 2px;
-        background-color: var(--dark-first);
-        margin: 0.2rem 0;
-        transition: all 0.3s ease;
+        width: 40px;
+        height: 3px;
+        background-color: var(--contrast-color);
+        transition: all 0.3s;
+        
     }
+    .menu_burguer.active + .nav ul {
+        right: 0;
+    }
+
+    .menu_burguer.active{
+        gap: 0;
+    }
+    .menu_burguer.active span:nth-child(2){
+        display: none;
+    }
+
+    .menu_burguer.active span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .menu_burguer.active span:nth-child(3){
+        transform: rotate(-45deg) translateY(-3px);
+    }
+    
+    .nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .social a i {
+        font-size: 1.5rem;
+    }
+
+    .social{
+        gap:  0;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+
+    }
+    
 }

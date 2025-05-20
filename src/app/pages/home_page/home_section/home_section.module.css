@@ -36,6 +36,7 @@
 .home_btn {
     display: flex;
     width: max-content;
+    font-size: 2rem;
 }
 
 .img_container {
@@ -43,4 +44,40 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+}
+
+@media (max-width: 800px) {
+    .home_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 90px 0;
+    }
+
+    .txt_container {
+        max-width: 100%;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txt_container h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .txt_container p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home_btn{
+        font-size: 1.5rem;
+    }
+
+    .img_container {
+        display: none;
+    }
+    
+
 }

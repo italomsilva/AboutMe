@@ -7,3 +7,9 @@
   background-color: var(--dark-second);
   row-gap: 2rem;
 }
+
+@media (max-width: 800px) {
+  .about_section {
+    padding: 90px 1rem;
+  }
+}

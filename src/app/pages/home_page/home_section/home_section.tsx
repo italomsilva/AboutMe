@@ -25,7 +25,6 @@ export default function HomeSection() {
               border: "2px solid var(--contrast-color)",
               hoverColor: "var(--contrast-color)",
               transition: "all 0.5s",
-              fontSize: "2rem",
               padding: "0.5rem 4rem",
             }}
           />

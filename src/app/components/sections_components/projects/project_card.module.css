@@ -45,3 +45,26 @@
     align-items: center;
     width: 100%;
 } 
+
+@media (max-width:800px){
+    .project_card{
+        min-width: 90vw;
+    }
+
+    .container_txt p {
+        font-size: 0.8rem;
+    }
+
+    .skills_list li {
+        font-size: 1.5rem;
+    }
+
+    .container_img{
+        height: 15vh;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+    
+}

@@ -1,10 +1,11 @@
 export default function MyTitle(props: MyTitleProps) {
     return (
         <h1
+        className={props.className}
         style={{
-            fontSize: props.fontSize || "2rem",
+            fontSize: props.fontSize || "",
             color: props.color || "var(--contrast-color)",
-            textAlign: props.textAlign || "left",
+            textAlign: props.textAlign,
             textDecoration: props.textDecoration || "underline",
         }}
         >
@@ -19,4 +20,5 @@ export type MyTitleProps = {
     color?: string;
     textAlign?: "left" | "center" | "right" | "justify";
     textDecoration?: "underline" | "none";
+    className?: string;
 };

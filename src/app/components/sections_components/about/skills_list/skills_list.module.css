@@ -40,3 +40,13 @@
     font-size: 1rem;
     font-weight: 200;
 }
+
+@media (max-width: 800px) {
+    .skills_list ul li i {
+        font-size: 1.5rem;
+    }
+
+    .skills_list ul li span {
+        font-size: 0.8rem;
+    }
+}

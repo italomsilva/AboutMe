@@ -8,4 +8,13 @@
     border: 3px solid var(--light-third);
     width: 80%;
     row-gap: 1rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    .about_card {
+        padding: 1rem;
+        width: 100%;
+        font-size: 1rem;
+    }
 }
