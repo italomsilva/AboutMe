@@ -46,7 +46,7 @@
     width: 50%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 999px) {
     .home_section{
         display: flex;
         flex-direction: column;
@@ -80,4 +80,11 @@
     }
     
 
+}
+
+@media (min-width: 701px) and (max-width:1000px) {
+
+    .txt_container p {
+        max-width: 80%;
+    }
 }

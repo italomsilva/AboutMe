@@ -19,7 +19,7 @@
     display: none;
 }
 
-@media(max-width:800px) {
+@media(max-width:710px) {
     .projects_section {
         padding: 90px 0;
     }
@@ -33,7 +33,20 @@
         justify-content: start;
     }
 
-    .p_seemore{
+    .p_seemore {
         display: block;
     }
+}
+
+@media (min-width: 701px) and (max-width:1000px) {
+    .projects_section {
+        padding: 90px 0;
+    }
+
+    .projects_list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
 }

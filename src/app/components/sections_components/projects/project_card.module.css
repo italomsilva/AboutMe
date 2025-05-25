@@ -46,7 +46,25 @@
     width: 100%;
 } 
 
-@media (max-width:800px){
+@media (min-width: 701px) and (max-width:1200px) {
+
+    .project_card {
+        max-width: 45%;
+    }
+
+    .container_txt p {
+        font-size: 1rem;
+    }
+
+    .container_img {
+        height: auto;
+    }
+
+    .container_img img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 800px){
     .project_card{
         min-width: 90vw;
     }
