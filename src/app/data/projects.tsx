@@ -35,8 +35,17 @@ export const projects: Project[] = [
       othersSkill[1],
     ],
     image: <img src={artMauricioImg.src} alt="" />,
-    linkView: "https://arte-mauricio-front-end-2d5l.vercel.app/",
+    linkView: "https://arte-mauricio.vercel.app/",
     linkCode: "https://github.com/italomsilva/ArteMauricio",
+  },
+  {
+    title: "Resolution API",
+    description: "Este projeto, a ResolutionAPI, é uma API RESTful robusta desenvolvida em Go, seguindo os princípios de Clean Architecture. Ela serve como a espinha dorsal de uma plataforma colaborativa, permitindo que usuários reportem problemas e proponham soluções, fomentando a participação cívica, a colaboração mútua e a eficiência na resolução de desafios. A API integra uma gestão completa de usuários com diferentes perfis, funcionalidades de CRUD detalhadas para problemas e soluções, além de um sistema de reações para engajamento. A segurança é garantida por autenticação JWT e controle de acesso via API Key, com todas as interações persistidas em um banco de dados PostgreSQL.",
+    skills: [
+      languagesSkill[3],
+      databasesSkill[1]
+    ],
+    linkCode:"https://github.com/italomsilva/go-resolution-api"
   },
   {
     title: "ToDo List Api",
