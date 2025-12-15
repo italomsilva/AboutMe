@@ -12,7 +12,7 @@ import {
   FaGitAlt,
   FaJava,
 } from "react-icons/fa";
-import { FaFlutter, FaGolang } from "react-icons/fa6";
+import { FaDartLang, FaFlutter, FaGolang } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { RiJavascriptFill } from "react-icons/ri";
 import {
@@ -24,102 +24,108 @@ import {
   SiSpring,
 } from "react-icons/si";
 
-export class Skill {
-  constructor(public name: string, public icon: JSX.Element) {}
+
+export interface Skill {
+  name: string;
+  icon: JSX.Element; 
 }
 
-export const skillsList:Skill[] = [
-  {
+export const Frameworks = {
+  NodeJs: {
     name: "Node.js",
-    icon: <FaNodeJs />,
+    icon: <FaNodeJs />, 
   },
-  {
+  NestJs: {
     name: "NestJS",
     icon: <SiNestjs />,
   },
-  {
+  NextJs: {
     name: "Next.js",
-    icon: <SiNextdotjs />,
+    icon: <SiNextdotjs  />,
   },
-  {
+  React: {
     name: "React",
     icon: <FaReact />,
   },
-  {
+  Flutter: {
     name: "Flutter",
     icon: <FaFlutter />,
   },
-  {
+  Spring: {
     name: "Spring",
     icon: <SiSpring />,
   },
-  {
+  Django: {
     name: "Django",
     icon: <DiDjango />,
   },
-  {
+  Vue: {
     name: "Vue.js",
     icon: <FaVuejs />,
   },
-  {
+  Angular: {
     name: "Angular",
     icon: <FaAngular />,
   },
-];
+} satisfies Record<string, Skill>;
 
-export const languagesSkill:Skill[] = [
-  {
+export const Languages = {
+  JavaScript: {
     name: "JavaScript",
     icon: <RiJavascriptFill />,
   },
-  {
+  TypeScript: {
     name: "TypeScript",
     icon: <BiLogoTypescript />,
   },
-  {
+  Python: {
     name: "Python",
     icon: <FaPython />,
   },
-  {
+  Go: {
     name: "Go",
     icon: <FaGolang />,
   },
-  {
+  Java: {
     name: "Java",
     icon: <FaJava />,
   },
-];
+  Dart:{
+    name: "Dart",
+    icon: <FaDartLang/>
+  }
+} satisfies Record<string, Skill>;
 
-export const databasesSkill:Skill[] = [
-  {
+export const Databases = {
+  MySQL: {
     name: "MySQL",
     icon: <GrMysql />,
   },
-  {
+  Postgres: {
     name: "PostgreSQL",
     icon: <SiPostgresql />,
   },
-  {
+  Mongo: {
     name: "MongoDB",
     icon: <SiMongodb />,
   },
-];
+} satisfies Record<string, Skill>;
 
-export const othersSkill:Skill[] = [
-  {
+export const Tools = {
+  AWS: {
     name: "AWS",
     icon: <FaAws />,
   },
-  {
+  Cloudinary: {
     name: "Cloudinary",
     icon: <SiCloudinary />,
   },
-  {
+  Docker: {
     name: "Docker",
     icon: <FaDocker />,
   },
-  {
+  Git: {
     name: "Git",
     icon: <FaGitAlt />,
   },
-];
+} satisfies Record<string, Skill>;

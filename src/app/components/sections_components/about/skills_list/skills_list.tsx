@@ -1,17 +1,17 @@
 import styles from "./skills_list.module.css";
 import MyTitle from "@/app/components/commom/title/MyTitle";
 import {
-  databasesSkill,
-  languagesSkill,
-  othersSkill,
-  skillsList,
+  Databases,
+  Frameworks,
+  Languages,
+  Tools,
 } from "@/app/data/skills";
 export default function SkillsList() {
   return (
     <div className={styles.skills_list}>
       <MyTitle text="Skills" textAlign="center" />
       <ul>
-        {languagesSkill.map((skill, index) => (
+        {Object.values(Languages).map((skill, index) => (
           <li key={index}>
             <i>{skill.icon}</i>
             <span>{skill.name}</span>
@@ -19,7 +19,7 @@ export default function SkillsList() {
         ))}
       </ul>
       <ul>
-        {skillsList.map((skill, index) => (
+        {Object.values(Frameworks).map((skill, index) => (
           <li key={index}>
             <i>{skill.icon}</i>
             <span>{skill.name}</span>
@@ -27,7 +27,7 @@ export default function SkillsList() {
         ))}
       </ul>
       <ul>
-        {databasesSkill.map((skill, index) => (
+        {Object.values(Databases).map((skill, index) => (
           <li key={index}>
             <i>{skill.icon}</i>
             <span>{skill.name}</span>
@@ -35,7 +35,7 @@ export default function SkillsList() {
         ))}
       </ul>
       <ul>
-        {othersSkill.map((skill, index) => (
+        {Object.values(Tools).map((skill, index) => (
           <li key={index}>
             <i>{skill.icon}</i>
             <span>{skill.name}</span>
