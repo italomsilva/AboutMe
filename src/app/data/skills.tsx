@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { FaDartLang, FaFlutter, FaGolang } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
-import { RiJavascriptFill } from "react-icons/ri";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiNestjs,
   SiNextdotjs,
@@ -22,6 +22,7 @@ import {
   SiMongodb,
   SiCloudinary,
   SiSpring,
+  SiSocketdotio,
 } from "react-icons/si";
 
 
@@ -67,6 +68,10 @@ export const Frameworks = {
     name: "Angular",
     icon: <FaAngular />,
   },
+  TailwindCss: {
+    name: "Tailwind",
+    icon: <RiTailwindCssFill />
+  }
 } satisfies Record<string, Skill>;
 
 export const Languages = {
@@ -128,4 +133,8 @@ export const Tools = {
     name: "Git",
     icon: <FaGitAlt />,
   },
+  SocketIo: {
+    name: "Socket.io",
+    icon: <SiSocketdotio />
+  }
 } satisfies Record<string, Skill>;

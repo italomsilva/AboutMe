@@ -2,6 +2,7 @@ import toDoListImg from "../images/to-do-list.png";
 import artMauricioImg from "../images/arte-mauricio.png";
 import resolutionAppImg from "../images/resolution-app.png";
 import { Databases, Frameworks, Languages, Skill, Tools } from "./skills";
+import mktChatImg from "@/app/images/mkt-chat.png"
 import { JSX } from "react";
 
 export class Project {
@@ -41,6 +42,23 @@ export const projects: Project[] = [
     image: <img src={artMauricioImg.src} alt="" />,
     linkView: "https://arte-mauricio.vercel.app/",
     linkCode: "https://github.com/italomsilva/ArteMauricio",
+  },
+  {
+    title: "MKT Chat",
+    description:
+      "Aplicação de chat em tempo real desenvolvida em homenagem à Makita, mascote símbolo do IFCE que faleceu em julho de 2025. O projeto utiliza uma arquitetura full-stack conteinerizada com Docker, implementando comunicação bidirecional via WebSockets (Socket.io). No frontend, utiliza Next.js com o Tailwind CSS v4 para uma UI performática e responsiva, além de React Context API para gerenciamento de estado global e persistência de sessão. O backend, construído em NestJS, gerencia o tráfego de mensagens e eventos de conexão de forma escalável, garantindo baixa latência na troca de informações.",
+    skills: [
+      Languages.TypeScript,
+      Frameworks.NodeJs,
+      Frameworks.NestJs,
+      Frameworks.NextJs,
+      Frameworks.React,
+      Frameworks.TailwindCss,
+      Tools.Docker,
+      Tools.SocketIo,
+    ],
+    image: <img src={mktChatImg.src} alt="MKT Chat Interface" />,
+    linkCode: "https://github.com/italomsilva/mkt-chat",
   },
   {
     title: "Resolution API",
