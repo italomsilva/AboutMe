@@ -1,8 +1,9 @@
 import toDoListImg from "../images/to-do-list.png";
 import artMauricioImg from "../images/arte-mauricio.png";
 import resolutionAppImg from "../images/resolution-app.png";
+import InfotoreImg from "../images/info-store.png";
 import { Databases, Frameworks, Languages, Skill, Tools } from "./skills";
-import mktChatImg from "@/app/images/mkt-chat.png"
+import mktChatImg from "@/app/images/mkt-chat.png";
 import { JSX } from "react";
 
 export class Project {
@@ -68,7 +69,17 @@ export const projects: Project[] = [
     linkCode: "https://github.com/italomsilva/go-resolution-api",
   },
   {
-    title: "ToDo List Api",
+    title: "InfoStore API",
+    description:
+      "API RESTful robusta desenvolvida em equipe como avaliação na disciplina de Linguagem de Programação 2. Sua finalidade é a gestão de uma loja de informática e automação de fluxos logísticos. O sistema gerencia o catálogo de produtos, controle de estoque, ciclo de vida dos pedidos e motor de logística integrado, que automatiza a geração de códigos de rastreio exclusivos e o gerenciamento dinâmico de estados de entrega. Construída sob os princípios da arquitetura MVC com ASP.NET Core, utiliza C# Records para imutabilidade de dados e partial classes para uma organização modular. A persistência é gerenciada pelo Entity Framework Core e documentação completa via Swagger UI.",
+    skills: [Languages.CSharp, Frameworks.DotNet, Databases.Postgres],
+    image: <img src={InfotoreImg.src} alt="" />,
+    linkView:
+      "https://youtube.com/playlist?list=PLSPy5dS7X6V2Wru6Guoc9SBg3SQz4kn7j&si=Hz6kzoeBNQGx6BMM",
+    linkCode: "https://github.com/italomsilva/dotnet-info-store",
+  },
+  {
+    title: "ToDo List API",
     description:
       "Este projeto é uma API de Lista de Tarefas desenvolvida com NestJS e TypeScript, utilizando como base a arquitetura MVC. Cada funcionalidade foi cuidadosamente implementada, desde a gestão completa de usuários (listagem, cadastro, autenticação, edição e exclusão), passando pelo CRUD de tarefas, até a autenticação com JWT e a adição de uma camada extra de segurança com chave de acesso. A documentação da API foi detalhadamente criada e está disponível via Swagger, garantindo uma utilização clara e eficiente da API. Cada detalhe foi pensado para proporcionar uma experiência segura e eficiente no gerenciamento de tarefas.",
     skills: [
@@ -81,7 +92,7 @@ export const projects: Project[] = [
     linkCode: "https://github.com/italomsilva/nest-to-do-list",
   },
   {
-    title: "Customer Manager Api",
+    title: "Customer Manager API",
     description:
       "Este projeto é uma API de Gerenciamento de Clientes desenvolvida com Node.js e TypeScript, utilizando como banco de dados MongoDb e tomando de base a arquitetura MVC. A Api conta com o CRUD de clientes, onde é possível cadastrar, listar, editar e excluir clientes. Um projeto simples, mas que demonstra a utilização de boas práticas de desenvolvimento e a criação de uma API RESTful e utilização de banco de dados NoSQL hospedados online (MongoDb Atlas).",
     skills: [

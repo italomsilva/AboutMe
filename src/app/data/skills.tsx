@@ -23,18 +23,19 @@ import {
   SiCloudinary,
   SiSpring,
   SiSocketdotio,
+  SiDotnet,
 } from "react-icons/si";
-
+import { TbBrandCSharp } from "react-icons/tb";
 
 export interface Skill {
   name: string;
-  icon: JSX.Element; 
+  icon: JSX.Element;
 }
 
 export const Frameworks = {
   NodeJs: {
     name: "Node.js",
-    icon: <FaNodeJs />, 
+    icon: <FaNodeJs />,
   },
   NestJs: {
     name: "NestJS",
@@ -42,7 +43,7 @@ export const Frameworks = {
   },
   NextJs: {
     name: "Next.js",
-    icon: <SiNextdotjs  />,
+    icon: <SiNextdotjs />,
   },
   React: {
     name: "React",
@@ -51,6 +52,10 @@ export const Frameworks = {
   Flutter: {
     name: "Flutter",
     icon: <FaFlutter />,
+  },
+  DotNet: {
+    name: ".NET",
+    icon: <SiDotnet />,
   },
   Spring: {
     name: "Spring",
@@ -70,8 +75,8 @@ export const Frameworks = {
   },
   TailwindCss: {
     name: "Tailwind",
-    icon: <RiTailwindCssFill />
-  }
+    icon: <RiTailwindCssFill />,
+  },
 } satisfies Record<string, Skill>;
 
 export const Languages = {
@@ -83,22 +88,26 @@ export const Languages = {
     name: "TypeScript",
     icon: <BiLogoTypescript />,
   },
-  Python: {
-    name: "Python",
-    icon: <FaPython />,
-  },
   Go: {
     name: "Go",
     icon: <FaGolang />,
+  },
+  Dart: {
+    name: "Dart",
+    icon: <FaDartLang />,
+  },
+  CSharp: {
+    name: "C#",
+    icon: <TbBrandCSharp />,
   },
   Java: {
     name: "Java",
     icon: <FaJava />,
   },
-  Dart:{
-    name: "Dart",
-    icon: <FaDartLang/>
-  }
+  Python: {
+    name: "Python",
+    icon: <FaPython />,
+  },
 } satisfies Record<string, Skill>;
 
 export const Databases = {
@@ -135,6 +144,6 @@ export const Tools = {
   },
   SocketIo: {
     name: "Socket.io",
-    icon: <SiSocketdotio />
-  }
+    icon: <SiSocketdotio />,
+  },
 } satisfies Record<string, Skill>;
