@@ -29,6 +29,7 @@ export const projects: Project[] = [
     ],
     image: <img src={zidaspImg.src} alt="Zidasp Interface" />,
     linkCode: "https://github.com/italomsilva/zidasp_app",
+    linkView: "https://github.com/italomsilva/zidasp_app/tree/master/release",
   },
   {
     title: "ResolutionApp",
