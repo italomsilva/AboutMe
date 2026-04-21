@@ -1,7 +1,7 @@
 import toDoListImg from "../images/to-do-list.png";
 import artMauricioImg from "../images/arte-mauricio.png";
 import resolutionAppImg from "../images/resolution-app.png";
-import zidaspImg from "../images/zidasp.png";
+import zidaspImg from "../images/zidasp_app.jpeg";
 import InfotoreImg from "../images/info-store.png";
 import { Databases, Frameworks, Languages, Skill, Tools } from "./skills";
 import mktChatImg from "@/app/images/mkt-chat.png";
