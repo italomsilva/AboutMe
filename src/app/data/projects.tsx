@@ -1,6 +1,7 @@
 import toDoListImg from "../images/to-do-list.png";
 import artMauricioImg from "../images/arte-mauricio.png";
 import resolutionAppImg from "../images/resolution-app.png";
+import zidaspImg from "../images/zidasp.png";
 import InfotoreImg from "../images/info-store.png";
 import { Databases, Frameworks, Languages, Skill, Tools } from "./skills";
 import mktChatImg from "@/app/images/mkt-chat.png";
@@ -14,10 +15,21 @@ export class Project {
     public image?: JSX.Element,
     public linkView?: string,
     public linkCode?: string
-  ) {}
+  ) { }
 }
 
 export const projects: Project[] = [
+  {
+    title: "Zidasp App",
+    description:
+      "Plataforma IoT de monitoramento inteligente para criação de camarão ou qualquer outro animal aquático. O sistema integra telemetria em tempo real capturada via sensores e protocolo MQTT. O frontend mobile em Flutter utiliza o gerenciamento de estado moderno com Dart Signals, proporcionando uma UI reativa e segura para o controle remoto de aeradores e bombas d'água e monitoramento de parâmetros como oxigênio dissolvido, salinidade e temperatura.",
+    skills: [
+      Languages.Dart,
+      Frameworks.Flutter,
+    ],
+    image: <img src={zidaspImg.src} alt="Zidasp Interface" />,
+    linkCode: "https://github.com/italomsilva/zidasp_app",
+  },
   {
     title: "ResolutionApp",
     description:
